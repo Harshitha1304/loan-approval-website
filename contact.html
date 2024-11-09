@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Loan Approval System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: lightyellow;
+        }
+        .contact-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: pink;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact-container h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contact-container p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        .contact-details h2, .contact-form h2, .map h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .contact-details p {
+            color: #333;
+            margin: 5px 0;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form label {
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .success-message {
+            color: #28a745;
+            font-size: 16px;
+            margin-top: 10px;
+            display: none; /* Hidden initially */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Us Section -->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We're here to help with any questions you may have. Reach out to us by email, phone, or fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <div class="contact-details">
+            <h2>Our Contact Information</h2>
+            <p>Email: support@quickloan.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 Loan Ave, Finance City, Country</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" onsubmit="showSuccessMessage(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p class="success-message" id="successMessage">Successfully submitted!</p>
+        </div>
+
+ 
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+
+            // Display the success message below the form
+            document.getElementById("successMessage").style.display = "block";
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+
+</body>
+</html>

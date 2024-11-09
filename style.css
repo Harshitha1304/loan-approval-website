@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFFBEB;
+}
+
+/* Ensure header is fixed at the top */
+header {
+    background-color: #FF6347;
+    color: black;
+    padding: 15px 30px; /* Padding adjusted for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the header to the top */
+    width: 100%; /* Make sure it spans the full width */
+    top: 0; /* Aligns the header to the very top */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2.5em; /* Slightly smaller for a better layout */
+    font-weight: bold;
+}
+
+header nav {
+    display: flex; /* Use flex to keep nav links in a row */
+}
+
+header nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px; /* Adjust font size for better fit */
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+header nav a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Adding padding to the body to avoid content hiding under the fixed header */
+body {
+    padding-top: 120px; /* Adjust based on your header height */
+}
+
+
+
+
+

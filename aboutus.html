@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Quick Loan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: lightyellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .about-container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: pink;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .about-container h1 {
+            color: #333;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .about-container h1::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background-color: #007bff;
+            display: block;
+            margin: 10px auto;
+        }
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .about-section p {
+            line-height: 1.7;
+            font-size: 1.1em;
+        }
+        .icon-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .icon-box {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .icon-box:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+        .icon-box i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .icon-box p {
+            font-size: 1.2em;
+        }
+        .services-section {
+            margin-bottom: 40px;
+        }
+        .services-section h2 {
+            color: #333;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services-section ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+        }
+        .services-section li {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+        }
+        .services-section li:hover {
+            transform: scale(1.05);
+        }
+        .progress-bar-container {
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .progress-bar {
+            width: 30%;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            padding: 5px;
+            position: relative;
+        }
+        .progress-bar .progress {
+            background-color: #007bff;
+            height: 20px;
+            border-radius: 15px;
+            transition: width 1s ease-in-out;
+        }
+        .progress-bar span {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #333;
+            font-weight: bold;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .image-gallery div {
+            width: 30%;
+            padding: 20px;
+            background-color: #f0f2f5;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+        <h1>About Quick Loan</h1>
+
+        <div class="about-section">
+            <p>At Quick Loan, we are committed to making your financial journey easier. We provide a range of loan options that help you achieve your financial goals with ease and security. Our mission is to provide fast, reliable, and transparent financial solutions tailored to your needs. Whether you're looking for personal loans or business financing, we are here to guide you every step of the way.</p>
+        </div>
+
+        <div class="icon-section">
+            <div class="icon-box">
+                <i class="fas fa-check-circle"></i>
+                <p>Fast Approval</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-dollar-sign"></i>
+                <p>Affordable Rates</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-shield-alt"></i>
+                <p>Secure Process</p>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Personal Loans</li>
+                <li>Business Loans</li>
+                <li>Home Improvement Loans</li>
+                <li>Debt Consolidation Loans</li>
+                <li>Auto Loans</li>
+            </ul>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+                <span>80% Loan Approval Rate</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+                <span>70% Customer Satisfaction</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+                <span>90% Fast Loan Disbursement</span>
+            </div>
+        </div>
+
+        <div class="image-gallery">
+            <div>
+                <h3>Our Team</h3>
+                <p>Our experienced team is dedicated to providing you with the best loan solutions.</p>
+            </div>
+            <div>
+                <h3>Our Process</h3>
+                <p>Fast, easy, and secure loan approval process that saves you time and money.</p>
+            </div>
+            <div>
+                <h3>Customer Support</h3>
+                <p>We offer 24/7 support to answer all your questions and guide you through the process.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
